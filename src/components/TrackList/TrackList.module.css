@@ -1,0 +1,48 @@
+.Tracklist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.buttonContainer {
+    margin-left: auto;
+    display: flex;
+}
+
+.Tracklist button {
+    background-color: #1C1C1C;
+    color: #ECEBE4;
+    font-size: 2rem;
+    padding: 0.3rem 1rem;
+    border: none; /* Removes border */
+    outline: none; /* Removes blue border */
+    cursor: pointer; /* Makes it clear it's clickable */
+    transition: color 0.3s ease;
+}
+
+.Tracklist button:hover {
+    color: #FF5733;
+}
+
+.albumArt {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+}
+
+.trackDetails {
+    display: flex;
+    flex-direction: column; /* Stacks name above artist */
+    text-align: left;
+}
+
+.trackDetails strong {
+    font-size: 1rem;
+}
+
+.trackDetails span {
+    font-size: 14px;
+    color: gray;
+}

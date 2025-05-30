@@ -1,11 +1,12 @@
 import React from 'react';
-import Tracklist from '../TrackList/TrackList'; // Import Tracklist component
+import styles from './SearchResults.module.css'
+import Tracklist from '../Tracklist/Tracklist';
 
-function SearchResults({ searchResults }) {
+function SearchResults({ searchResults, addTrack }) {
     return (
         <div>
             <h2>Search Results</h2>
-            <Tracklist tracks={searchResults} /> {/* Pass tracks to Tracklist */}
+            <Tracklist tracks={searchResults} addTrack={addTrack} /> {/* Pass function */}
         </div>
     );
 }
